@@ -7,14 +7,23 @@ public class Main {
         String primerNumero = JOptionPane.showInputDialog("Introduce el primer entero");
         String segundoNumero = JOptionPane.showInputDialog("Introduce el segundo entero");
 
-        int numero1 = Integer.parseInt(primerNumero);
-        int numero2 = Integer.parseInt(segundoNumero);
-        int suma = numero1 + numero2;
-        int resta = numero1 - numero2;
-        int multiplicacion = numero1 * numero2;
-        int division = numero1 / numero2;
+//        int numero1 = Integer.parseInt(primerNumero);
+//        int numero2 = Integer.parseInt(segundoNumero);
+//        int suma = numero1 + numero2;
+//        int resta = numero1 - numero2;
+//        int multiplicacion = numero1 * numero2;
+//        int division = numero1 / numero2;
+//
+//        JOptionPane.showMessageDialog(null, "El resultado es: " + suma, "suma de dos enteros", JOptionPane.INFORMATION_MESSAGE);
+//        JOptionPane.showInputDialog("El resultado es: "+resta);
 
-        JOptionPane.showMessageDialog(null, "El resultado es: " + suma, "suma de dos enteros", JOptionPane.INFORMATION_MESSAGE);
-        JOptionPane.showInputDialog("El resultado es: "+resta);
+        JFrame frame = new JFrame("Mi aplicación");
+        frame.setContentPane(new form1().mainPanel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+        frame.setLocationRelativeTo(null);
+        frame.setResizable(false);
 
-}}
+    }
+}
