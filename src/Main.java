@@ -1,5 +1,4 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-/import javax.swing.*;
+import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
